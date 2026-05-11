@@ -7,6 +7,10 @@ redirect_from:
   - /resume
 ---
 
+ button:
+        text: Download CV
+        url: /files/CV_MaartjevanWijhe.pdf
+
 {% include base_path %}
 
 Education
