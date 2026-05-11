@@ -1,5 +1,5 @@
 ---
-permalink: /
+permalink: /https://maartjevw23.github.io/mywebsite/
 title: "About me"
 author_profile: true
 redirect_from: 
