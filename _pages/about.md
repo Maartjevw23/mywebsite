@@ -1,10 +1,7 @@
 ---
-permalink: /https://maartjevw23.github.io/mywebsite
+permalink: /
 title: "About me"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
 I am a PhD candidate in Applied Economics at Erasmus University
