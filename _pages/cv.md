@@ -7,7 +7,7 @@ redirect_from:
   - /resume
 ---
 
- button:
+button:
         text: Download CV
         url: /files/CV_MaartjevanWijhe.pdf
 
