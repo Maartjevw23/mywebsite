@@ -222,16 +222,16 @@ kramdown:
 collections:
   teaching:
     output: true
-    permalink: /:collection/:path/
+    permalink: /https://maartjevw23.github.io/mywebsite/teaching
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /https://maartjevw23.github.io/mywebsite/publications
   portfolio:
     output: true
-    permalink: /:collection/:path/
+    permalink: /https://maartjevw23.github.io/mywebsite/portfolio
   talks:
     output: true
-    permalink: /:collection/:path/
+    permalink: /https://maartjevw23.github.io/mywebsite/talks
 
 
 # These settings control how pages and collections are included in the site
