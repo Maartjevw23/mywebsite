@@ -23,7 +23,7 @@ repository               : "https://github.com/Maartjevw23/mywebsite"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.jpeg"
+  avatar           : "images/profile.jpeg"
   name             : "Maartje van Wijhe"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in Applied Economics, Erasmus University Rotterdam"
