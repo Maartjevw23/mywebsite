@@ -7,7 +7,7 @@ permalink: /research/temperatures-domestic-violence-peru
 excerpt: "This paper studies the effects of ...."
 date: 2026-05-11
 venue: "Working Paper"
-paperurl: ""
+paperurl: 
 ---
 
 <details> 
