@@ -1,46 +1,36 @@
-/* Zorg dat de HTML en Body de volledige hoogte gebruiken */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-/* De hoofdcontainer van de site (vaak #main of .initial-content) moet flex worden */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Dit zorgt dat de content de ruimte opvult en de footer omlaag duwt */
-#main, .initial-content {
-  flex: 1 0 auto;
-}
-
 /* ==========================================================================
-   FOOTER AANGEPAST
+   FOOTER (COMPACT & HERSTELD)
    ========================================================================== */
+
+/* Drukt de footer veilig naar beneden zonder de sidebar/foto te breken */
+#main {
+  min-height: calc(100vh - 200px); 
+}
+
 .page__footer {
-  flex-shrink: 0; /* Voorkomt dat de footer in elkaar krupt */
+  clear: both; /* Zorgt dat de footer netjes onder de sidebar blijft */
   background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
-  
   width: 100%;
   height: auto;
-  margin-top: auto; /* Duwt de footer automatisch naar de absolute bodem */
-  padding: 2em 0;   /* Geeft de footer een nette, vaste hoogte door interne padding */
+  
+  /* Compactere hoogtes */
+  margin-top: 2em;   
+  padding: 0.5em 0;  /* Minder witruimte boven en onder */
+  
+  border-top: 1px solid var(--global-dark-border-color);
 
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
   -webkit-animation-delay: 0.45s;
           animation-delay: 0.45s;
-  border-top: 1px solid var(--global-dark-border-color);
 
   footer {
-    @include clearfix;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 1em;
+    margin-top: 0.5em;      /* Minder witruimte binnenin */
     max-width: 100%;
-    padding: 0 1em 1em;
+    padding: 0 1em 0.5em;   /* Compactere padding */
 
     @include breakpoint($x-large) {
       max-width: $x-large;
