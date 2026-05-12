@@ -13,9 +13,29 @@
   width: 100%;
   clear: both;
 
-  / keep footer in normal document flow so custom widgets do not overlap content */
-  height: 100%;
+  /*keep footer in normal document flow so custom widgets do not overlap content */
+  height: %;
 
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Zorgt dat de body minimaal de hele schermhoogte is */
+  margin: 0;
+}
+
+.content {
+  flex: 1; /* Laat de inhoud groeien om de ruimte te vullen */
+}
+
+footer {
+  /* Footer blijft automatisch onderaan */
+}
+
+   
   margin-top: 3em;
 
   -webkit-animation: intro 0.3s both;
