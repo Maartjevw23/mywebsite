@@ -1,7 +1,7 @@
 ---
 title: "Rising Temperatures and Domestic Violence in Peru: Evidence and Mechanisms"
 "with Fiorella"
-collection: research
+collection: _research
 category: working_papers
 permalink: /research/temperatures-domestic-violence-peru
 excerpt: "This paper studies the effects of ...."
