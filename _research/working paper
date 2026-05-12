@@ -4,6 +4,16 @@ layout: single
 permalink: /research/
 ---
 
+<style>
+  /* Verwijdert de extra witruimte onder de hoofdtitel 'Research' */
+  .page__inner-title { margin-bottom: 0.5em !important; }
+  .page__content h2 { margin-top: 0.5em !important; }
+  
+  /* Verbergt het standaard browser-driehoekje zodat er maar 1 overblijft */
+  details summary::-webkit-details-marker { display: none; }
+  details summary { list-style: none; }
+</style>
+
 <h2>Working papers</h2>
 
 <!-- EERSTE PAPER -->
@@ -24,7 +34,7 @@ permalink: /research/
 
 <!-- TWEEDE PAPER -->
 <h3>Cold, heat and health: the impact of temperature on mortality and hospitalizations</h3>
-<p><em>with <a href="https://www.eur.nl/en/people/pilar-garcia-gomez" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.eur.nl/people/tom-van-ourti" target="_blank">Tom van Ourti</a></em></p>
+<p><em>with <a href="eur.nl" target="_blank">Pilar Garcia Gomez</a> and <a href="eur.nl" target="_blank">Tom van Ourti</a></em></p>
 
 <details>
   <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
@@ -35,5 +45,33 @@ permalink: /research/
     <p>Evidence on timing suggest that the absent hospitalization response to heat reflects that many elderly either do not reach a hospital on time or, for those in institutional care, are not transferred to hospital; in turn, the longer lag from cold exposure to death appears to allow more time for hospital admission.</p>
   </div>
 </details>
+
+<hr style="margin: 3em 0;">
+
+<h2>Work in progress</h2>
+
+<!-- WIP 1 (JOB MARKET PAPER) -->
+<h3>Spousal and Intergenerational Effects of Survivor Benefit Reductions (job market paper)</h3>
+
+<details>
+  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
+    ▸ Abstract
+  </summary>
+  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
+    <p>This paper studies household responses to survivor benefit reductions following spousal death, exploiting two Dutch reforms to estimate causal effects on widows and their children. Using administrative data in a regression discontinuity design, I find that a stricter means test on other sources of income leads to a reduction in widow's employment income, without an impact on employment. Intergenerational effects are concentrated in sons below 18 at the time of death, who have lower educational attainment and reduced earnings in adulthood. A reform restricting benefit eligibility to widows caring for a minor child leads widows to increase employment and substitute into other public programs upon losing eligibility, with no anticipatory response beforehand. Daughters who experienced paternal death between ages 19 and 23 - whose mothers most often substitute into social assistance - have persistently higher social assistance use in adulthood, suggesting an intergenerational cycle of program dependence. My findings underscore the importance of accounting for intergenerational effects, as incentives to discourage maternal reliance on benefits can have unintended negative consequences for children. Additionally, the results highlight that first- and second-generation effects of survivor benefit policies depend on benefit structure, not merely benefit level.</p>
+  </div>
+</details>
+
+<hr style="margin: 2em 0;">
+
+<!-- WIP 2 -->
+<h3>Health and Marriage</h3>
+<p><em>with <a href="http://www.carolinaarteaga.com/" target="_blank">Carolina Arteaga</a>, <a href="eur.nl" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.nataliavigezzi.com/" target="_blank">Natalia Vigezzi</a></em></p>
+
+<hr style="margin: 2em 0;">
+
+<!-- WIP 3 -->
+<h3>Parental Health Shocks and Child Wellbeing</h3>
+<p><em>with <a href="http://www.carolinaarteaga.com/" target="_blank">Carolina Arteaga</a>, <a href="eur.nl" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.nataliavigezzi.com/" target="_blank">Natalia Vigezzi</a></em></p>
 
 <hr style="margin: 2em 0;">
