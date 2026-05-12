@@ -6,21 +6,39 @@ share: false
 ---
 
 <style>
-  /* Verwijdert de extra witruimte onder de hoofdtitel 'Research' */
+  /* Ruimte onder paginatitel verkleinen */
   .page__inner-title { margin-bottom: 0.5em !important; }
   .page__content h2 { margin-top: 0.5em !important; }
   
-  /* Verbergt het standaard browser-driehoekje zodat er maar 1 overblijft */
+  /* Standaard browser-driehoekje verbergen */
   details summary::-webkit-details-marker { display: none; }
   details summary { list-style: none; }
 
-  /* Pas de horizontale strepen aan naar een rustige, dunne grijze lijn */
+  /* Horizontale strepen veel compacter maken */
   .page__content hr {
     border: 0;
-    border-top: 1px solid #e2e8f0 !important; /* Heel lichtgrijs in plaats van blauw */
-    margin: 2.5em 0 !important;
+    border-top: 1px solid #e2e8f0 !important;
+    margin: 1.2em 0 !important; /* Ruimte boven en onder de streep gehalveerd */
+  }
+
+  /* Ruimte rondom de titels en auteursnamen strakker trekken */
+  .page__content h3 {
+    margin-top: 0 !important;     /* Verwijdert witruimte boven de papertitel */
+    margin-bottom: 0.2em !important;  /* Trekt de auteursnaam dichter naar de titel toe */
+  }
+
+  .page__content p {
+    margin-top: 0 !important;     /* Voorkomt dat alinea's omhoog geduwd worden */
+    margin-bottom: 0.6em !important; /* Compacte ruimte onder de auteursnaam */
+  }
+
+  /* Compacte aansluiting voor de uitklapbare abstracts */
+  details {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
   }
 </style>
+
 
 <h2>Working papers</h2>
 
