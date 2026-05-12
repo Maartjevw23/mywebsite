@@ -1,10 +1,9 @@
 ---
 layout: archive
 title: "CV"
-permalink: /https://maartjevw23.github.io/mywebsite/cv/
+permalink: /cv/
 author_profile: true
-redirect_from:
-  - /resume-json
+
 ---
 
 {% include base_path %}
