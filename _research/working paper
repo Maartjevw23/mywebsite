@@ -6,24 +6,34 @@ permalink: /research/
 
 <h2>Working papers</h2>
 
-<br>
-
+<!-- EERSTE PAPER -->
 <h3>Rising Temperatures and Domestic Violence in Peru: Evidence and Mechanisms</h3>
-
 <p><em>with <a href="https://scholar.google.com/citations?user=I_hEMQYAAAAJ&hl=en" target="_blank">Fiorella Parra-Mujica</a></em></p>
 
-<br>
-
 <details>
-  <summary style="font-weight: bold; cursor: pointer; color: #494e52; margin-top: 1em; font-size: 1.1em;">
+  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
     ▸ Abstract
   </summary>
-  <div style="margin-top: 1em; text-align: justify; line-height: 1.5;">
+  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
     <p>We study the causal impact of ambient temperature on domestic violence (DV) in Peru using three administrative datasets - police reports, women's emergency center visits, and a national helpline - matched to high-resolution ERA5 satellite weather data. Exploiting plausibly exogenous day-to-day temperature variation within a flexible binned fixed-effects design, we find that days above 32°C increase police-reported DV by 19% relative to the daily mean, with each additional degree Celsius associated with a 3.5% increase. Cumulative lag models establish that these represent genuinely new incidents rather than temporal displacement.</p>
-
     <p>We then examine three candidate mechanisms. Temperature significantly increases alcohol consumption and is associated with proportionally larger increases in DV involving intoxicated perpetrators. Temperature reduces hours worked and labor income among informally employed women—generating immediate bargaining shocks within households that increase domestic violence. A sector decomposition shows that this income loss is not confined to physically outdoor occupations: it occurs uniformly across informal workers in agriculture, manufacturing, and personal services alike, indicating that the binding constraint is the absence of contractual income protection rather than physical heat exposure per se. We find no evidence for effects operating through depressive symptoms or sleep disruption. Our results underscore that DV responds to heat through intra-household mechanisms distinct from those governing other crimes.</p>
   </div>
 </details>
 
-<br>
-<hr>
+<hr style="margin: 2em 0;">
+
+<!-- TWEEDE PAPER -->
+<h3>Cold, heat and health: the impact of temperature on mortality and hospitalizations</h3>
+<p><em>with <a href="https://www.eur.nl/en/people/pilar-garcia-gomez" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.eur.nl/people/tom-van-ourti" target="_blank">Tom van Ourti</a></em></p>
+
+<details>
+  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
+    ▸ Abstract
+  </summary>
+  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
+    <p>We study the short-term effects of hot and cold temperatures on mortality and urgent hospitalizations in the Netherlands from 1995 to 2019. Linking daily mortality and hospitalization records to daily meteorological data from ground weather stations, we estimate effects within 0-30 days after exposure to a hot or cold day. We find that both heat and cold increase mortality among the elderly, whereas mortality in other age groups is unaffected. By contrast, hospitalizations attributable to heat or cold rise among younger age groups - particularly children - but only mortality rises among the elderly.</p>
+    <p>Evidence on timing suggest that the absent hospitalization response to heat reflects that many elderly either do not reach a hospital on time or, for those in institutional care, are not transferred to hospital; in turn, the longer lag from cold exposure to death appears to allow more time for hospital admission.</p>
+  </div>
+</details>
+
+<hr style="margin: 2em 0;">
