@@ -1,6 +1,6 @@
 ---
 title: "Rising Temperatures and Domestic Violence in Peru: Evidence and Mechanisms"
-  "with Fiorella Parra-Mujica" (link invoegen)
+  "with Fiorella Parra-Mujica" 
 collection: research
 category: manuscripts
 permalink: /research/working-paper-rising-temperatures-and-domestic-violence-in-Peru
