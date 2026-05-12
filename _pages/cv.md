@@ -3,7 +3,6 @@ layout: archive
 title: "CV"
 permalink: "https://maartjevw23.github.io/mywebsite/cv"
 author_profile: true
-redirect_from:
 
 button:
         text: Download CV
