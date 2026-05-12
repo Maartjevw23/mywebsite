@@ -7,6 +7,6 @@ author_profile: true
 ---
 
 <div class="cv-download-links">
-<a href= "/files/CV_MaartjevanWijhe.pdf" class="btn btn--primary">Download CV as PDF</a>
-  <a href="/files/CV_MaartjevanWijhe.pdf" class="btn btn--inverse">View Markdown CV</a>
+<a href= "/mywebsite/files/CV_MaartjevanWijhe.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="/mywebsite/files/CV_MaartjevanWijhe.pdf" class="btn btn--inverse">View Markdown CV</a>
 </div>
