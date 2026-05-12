@@ -43,3 +43,13 @@ $background-color: #BDD2DC;
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
+/* Dwing de website-achtergrond naar Blue Ashes */
+html, body, .page__wrap, .initial-content {
+  background-color: #BDD2DC !important;
+}
+
+/* Zorg dat de sidebar (je profielfoto-blok) transparant blijft en mooi meekleurt */
+.sidebar {
+  background-color: transparent !important;
+}
+
