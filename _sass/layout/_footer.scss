@@ -1,23 +1,19 @@
-/* ==========================================================================
-   FOOTER (COMPACT & HERSTELD)
-   ========================================================================== */
-
-/* Drukt de footer veilig naar beneden zonder de sidebar/foto te breken */
+/* Zorgt voor extra ruimte onderaan de content zodat de vaste footer niks bedekt */
 #main {
-  min-height: calc(100vh - 200px); 
+  padding-bottom: 70px; 
 }
 
 .page__footer {
-  clear: both; /* Zorgt dat de footer netjes onder de sidebar blijft */
+  position: fixed; /* Zet de footer permanent vast op het scherm */
+  bottom: 0;
+  left: 0;
+  z-index: 999;    /* Zorgt dat de footer altijd bovenop de content ligt */
+  
   background-color: var(--global-footer-bg-color);
   color: var(--global-text-color-light);
   width: 100%;
   height: auto;
-  
-  /* Compactere hoogtes */
-  margin-top: 2em;   
-  padding: 0.5em 0;  /* Minder witruimte boven en onder */
-  
+  padding: 0.5em 0;
   border-top: 1px solid var(--global-dark-border-color);
 
   -webkit-animation: intro 0.3s both;
@@ -28,9 +24,9 @@
   footer {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 0.5em;      /* Minder witruimte binnenin */
+    margin-top: 0.2em;
     max-width: 100%;
-    padding: 0 1em 0.5em;   /* Compactere padding */
+    padding: 0 1em 0.2em;
 
     @include breakpoint($x-large) {
       max-width: $x-large;
@@ -53,6 +49,7 @@
     color: var(--global-text-color-light);
   }
 }
+
 
 .page__footer-copyright {
   font-family: $global-font-family;
