@@ -2,6 +2,7 @@
 title: "Research"
 layout: single
 permalink: /research/
+share: false
 ---
 
 <style>
@@ -12,6 +13,13 @@ permalink: /research/
   /* Verbergt het standaard browser-driehoekje zodat er maar 1 overblijft */
   details summary::-webkit-details-marker { display: none; }
   details summary { list-style: none; }
+
+  /* Pas de horizontale strepen aan naar een rustige, dunne grijze lijn */
+  .page__content hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0 !important; /* Heel lichtgrijs in plaats van blauw */
+    margin: 2.5em 0 !important;
+  }
 </style>
 
 <h2>Working papers</h2>
