@@ -53,3 +53,28 @@ html, body, .page__wrap, .initial-content {
   background-color: transparent !important;
 }
 
+/* Pas alle hoofdteksten, titels en links aan naar de headerkleur (#494e52) */
+body, 
+.page__content, 
+.page__content p,
+.page__content h1, 
+.page__content h2, 
+.page__content h3, 
+.page__content h4,
+.archive__item-title,
+.sidebar .profile__name,
+.sidebar .profile__bio {
+  color: #494e52 !important;
+}
+
+/* Zorg dat links op de pagina's ook deze kleur gebruiken en subtiel onderstreept worden */
+.page__content a {
+  color: #494e52 !important;
+  text-decoration: none !important;
+  border-bottom: 1px dotted #494e52;
+}
+
+.page__content a:hover {
+  color: #000000 !important; /* Wordt iets donkerder als je er met de muis op staat */
+  border-bottom: 1px solid #000000;
+}
