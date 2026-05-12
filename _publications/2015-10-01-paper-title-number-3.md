@@ -3,7 +3,7 @@ title: "Rising Temperatures and Domestic Violence in Peru: Evidence and Mechanis
   "with Fiorella Parra-Mujica" 
 collection: research
 category: manuscripts
-permalink: /research/working-paper-rising-temperatures-and-domestic-violence-in-Peru
+permalink: /research/
 excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
 date: 2015-10-01
 venue: 'Journal 1'
