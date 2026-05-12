@@ -23,7 +23,7 @@ repository               : "https://github.com/Maartjevw23/mywebsite"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "images/profile.jpeg"
+  avatar           : profile.jpeg
   name             : "Maartje van Wijhe"
   pronouns         : # example: "she/her"  
   bio              : "PhD candidate in Applied Economics, Erasmus University Rotterdam"
@@ -223,9 +223,9 @@ collections:
   teaching:
     output: true
     permalink: /https://maartjevw23.github.io/mywebsite/teaching
-  publications:
+  research:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/publications
+    permalink: /https://maartjevw23.github.io/mywebsite/research
   portfolio:
     output: true
     permalink: /https://maartjevw23.github.io/mywebsite/portfolio
@@ -263,10 +263,10 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _publications
+  # _research
   - scope:
       path: ""
-      type: publications
+      type: research
     values:
       layout: single
       author_profile: true
