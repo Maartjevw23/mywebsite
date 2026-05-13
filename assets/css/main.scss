@@ -64,12 +64,12 @@ body,
 .archive__item-title,
 .sidebar .profile__name,
 .sidebar .profile__bio {
-  color: #494e52 !important;
+  color: #1c1c1c !important;
 }
 
 /* Zorg dat links op de pagina's ook deze kleur gebruiken en subtiel onderstreept worden */
 .page__content a {
-  color: #494e52 !important;
+  color: #1c1c1c !important;
   text-decoration: none !important;
   border-bottom: 1px dotted #494e52;
 }
@@ -79,46 +79,15 @@ body,
   border-bottom: 1px solid #000000;
 }
 
-/* --- DE DEFINITIEVE BLAUWE FIX --- */
-
-/* 1. Header volledig blauw (alle lagen) */
-#masthead, 
-.masthead, 
-.masthead__inner, 
-.masthead__inner-ring, 
-.masthead__container {
-  background-color: #052633 !important; 
-  border: none !important;
-  box-shadow: none !important;
-}
-
-/* 2. Footer volledig blauw (alle lagen) */
-footer,
-.page__footer,
-.page__footer-follow,
-.page__footer-copyright {
-  background-color: #052633 !important;
-  color: #ffffff !important;
+/* Fix voor een egale header en footer */
+.masthead, .masthead__inner, .greedy-nav {
+  background-color: #052633 !important; /* Jouw blauw */
   border: none !important;
 }
 
-/* 3. Forceer de tekst in de footer op wit */
-.page__footer a, 
-.page__footer p, 
-.page__footer-follow li a {
+.page__footer {
+  background-color: #052633 !important; /* Nu geforceerd blauw */
   color: #ffffff !important;
-  background-color: transparent !important;
-}
-
-/* 4. Verwijder de grijze tussenruimte/balken */
-.initial-content {
-  background-color: #f0f7ff !important; /* Zelfde kleur als je body */
-}
-
-/* 4. De achtergrond van de rest van de pagina (Licht) */
-body {
-  background-color: #f0f7ff !important;
-  color: #1c1c1c !important;
 }
 
 /* --- Uniforme stijl voor de academische arbeidsmarkt --- */
