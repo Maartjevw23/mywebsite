@@ -79,33 +79,40 @@ body,
   border-bottom: 1px solid #000000;
 }
 
-/* --- Volledige fix voor de egale blauwe header --- */
+/* --- DE DEFINITIEVE BLAUWE FIX --- */
 
-/* We pakken alle mogelijke lagen: de balk, de container en de binnenkant */
+/* 1. Header volledig blauw (alle lagen) */
+#masthead, 
 .masthead, 
 .masthead__inner, 
-.masthead__inner-ring,
+.masthead__inner-ring, 
 .masthead__container {
-  background-color: #052633 !important; /* Gebruik hier je exacte blauwe kleur */
+  background-color: #052633 !important; 
   border: none !important;
   box-shadow: none !important;
 }
 
-/* Soms zit er een subtiele border of achtergrond op de navigatie-links zelf */
-.masthead__menu,
-.masthead__menu-item {
-  background-color: transparent !important;
+/* 2. Footer volledig blauw (alle lagen) */
+footer,
+.page__footer,
+.page__footer-follow,
+.page__footer-copyright {
+  background-color: #052633 !important;
+  color: #ffffff !important;
+  border: none !important;
 }
 
-/* Zorg dat de tekst wit blijft tegen het donkerblauw */
-.masthead__menu-item a {
+/* 3. Forceer de tekst in de footer op wit */
+.page__footer a, 
+.page__footer p, 
+.page__footer-follow li a {
   color: #ffffff !important;
   background-color: transparent !important;
 }
 
-/* Verwijder de onderste rand die vaak grijs is */
-.masthead {
-  border-bottom: none !important;
+/* 4. Verwijder de grijze tussenruimte/balken */
+.initial-content {
+  background-color: #f0f7ff !important; /* Zelfde kleur als je body */
 }
 
 /* 4. De achtergrond van de rest van de pagina (Licht) */
