@@ -168,55 +168,57 @@ h1, h2, h3, h4, .page__title {
   border-bottom-color: #052633 !important;
 }
 
-/* --- 1. Fix voor Uitlijning & Layout (Vervangt het oude blok) --- */
+/* --- Volledige Layout Reset & Strakke Uitlijning --- */
+
+/* 1. Forceer de hoofdcontainer van de hele site op één breedte */
+.masthead__inner, 
+.initial-content, 
+.page__footer-inner {
+  max-width: 1200px !important; /* Breedte van je site */
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+/* 2. De Sidebar (Linkerkant) */
 @media (min-width: 64em) {
-  /* Sidebar breedte instellen zonder dat alles verschuift */
   .sidebar {
-    width: 300px !important; 
-    float: none !important;
-    position: absolute;
+    width: 260px !important; 
+    padding-right: 0 !important;
+    margin-right: 40px !important;
+    float: left !important;
   }
 
-  /* Zet de hoofdtekst terug op de juiste plek en lijn uit met 'Research' */
+  /* 3. De Hoofdtekst (Rechterkant) */
   .archive, .page {
-    width: auto !important;
-    float: none !important;
-    margin-left: 300px !important; 
-    padding-left: 60px !important; /* Pas dit getal aan tot 'Welcome' onder 'Research' staat */
-  }
-
-  /* Lijn de koppen uit */
-  .page__title {
-    margin-top: 0 !important;
+    width: calc(100% - 300px) !important; /* Sidebar (260) + Margin (40) */
+    float: left !important;
     padding-left: 0 !important;
+    margin-left: 0 !important;
   }
 }
 
-/* De naam linksboven uitlijnen met de zijbalknaam */
-.masthead__inner {
-  max-width: 1280px !important;
-  padding-left: 2em !important; /* Tweak dit getal om de naam exact boven je foto te krijgen */
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* 4. De "Maartje van Wijhe" Alignment (Header vs Sidebar) */
 .masthead__menu-item--lg {
   padding-left: 0 !important;
+  margin-left: 0 !important;
 }
 
-/* --- 2. De Kleuren & Uniformiteit (Behouden!) --- */
-.greedy-nav, .greedy-nav .visible-links li {
-  background-color: #052633 !important;
+/* 5. De "Research" Alignment (Menu vs Welcome) */
+/* Dit zorgt dat de tekst 'Welcome' exact onder de menu-knop 'Research' begint */
+.page__title {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
 }
 
-/* Geen witte/grijze streep onder actieve menu-items */
-.masthead__menu-item--active {
+/* 6. Netjes maken van de blauwe balk */
+.masthead {
   border-bottom: none !important;
 }
 
-/* Voorkom afbreken van 'Rotterdam' */
-.author__urls-wrapper li {
-  white-space: nowrap !important;
+.masthead__menu-item--active {
+  border-bottom: none !important;
 }
 /* --- Volledige Uniformiteit in Lettertype en Kleur --- */
 
