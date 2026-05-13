@@ -79,15 +79,17 @@ body,
   border-bottom: 1px solid #000000;
 }
 
-/* --- Handmatige aanpassing voor Blauwe Header/Footer --- */
+/* --- Handmatige aanpassing voor Blauwe Header/Footer (Met binnen-fix!) --- */
 
-/* 1. De Header (Masthead) */
-.masthead {
-  background-color: #052633 !important; /* Dit is een diep donkerblauw */
-  border-bottom: none !important;
+/* 1. De Header (de hele balk én de binnenkant) */
+.masthead,
+.masthead__inner {
+  background-color: #052633 !important; /* Pas dit aan naar jouw specifieke blauw */
+  border: none !important;              /* Haal eventuele randen weg */
+  box-shadow: none !important;          /* Haal eventuele schaduwen weg */
 }
 
-/* 2. De tekstkleur in de header (wit) */
+/* 2. De navigatie-links in de header (wit) */
 .masthead__menu-item a {
   color: #ffffff !important;
 }
@@ -99,7 +101,7 @@ body,
   margin-top: 0 !important;
 }
 
-/* 4. De achtergrond van de pagina (Lichtblauw uit je link) */
+/* 4. De achtergrond van de rest van de pagina (Licht) */
 body {
   background-color: #f0f7ff !important;
   color: #1c1c1c !important;
