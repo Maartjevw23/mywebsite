@@ -168,53 +168,49 @@ h1, h2, h3, h4, .page__title {
   border-bottom-color: #052633 !important;
 }
 
-/* --- Volledige Layout Reset & Strakke Uitlijning --- */
+/* --- 1. Stabiele Layout & Uitlijning --- */
 
-/* 1. Forceer de hoofdcontainer van de hele site op één breedte */
-.masthead__inner, 
-.initial-content, 
-.page__footer-inner {
-  max-width: 1200px !important; /* Breedte van je site */
+@media (min-width: 64em) {
+  /* We zetten de sidebar vast op zijn plek */
+  .sidebar {
+    width: 260px !important;
+    float: left !important;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* We duwen de hoofdtekst met geweld naar rechts zodat hij NOOIT naar links kan */
+  .archive, .page {
+    display: block !important;
+    width: auto !important;
+    margin-left: 320px !important; /* Breedte sidebar + witruimte */
+    padding-left: 0 !important;
+    float: none !important;
+    clear: none !important;
+  }
+
+  /* Zorg dat de titel (Welcome) niet te hoog staat ten opzichte van de foto */
+  .page__title {
+    margin-top: 10px !important;
+  }
+}
+
+/* 2. De naam linksboven uitlijnen met de profielfoto */
+/* We passen de padding van de blauwe balk aan tot het exact boven je foto staat */
+.masthead__inner {
+  max-width: 1200px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding-left: 35px !important; /* Pas dit getal (35) aan voor de perfecte lijn */
 }
 
-/* 2. De Sidebar (Linkerkant) */
-@media (min-width: 64em) {
-  .sidebar {
-    width: 260px !important; 
-    padding-right: 0 !important;
-    margin-right: 40px !important;
-    float: left !important;
-  }
-
-  /* 3. De Hoofdtekst (Rechterkant) */
-  .archive, .page {
-    width: calc(100% - 300px) !important; /* Sidebar (260) + Margin (40) */
-    float: left !important;
-    padding-left: 0 !important;
-    margin-left: 0 !important;
-  }
-}
-
-/* 4. De "Maartje van Wijhe" Alignment (Header vs Sidebar) */
 .masthead__menu-item--lg {
   padding-left: 0 !important;
-  margin-left: 0 !important;
 }
 
-/* 5. De "Research" Alignment (Menu vs Welcome) */
-/* Dit zorgt dat de tekst 'Welcome' exact onder de menu-knop 'Research' begint */
-.page__title {
-  margin-top: 0 !important;
-  padding-top: 0 !important;
-}
-
-/* 6. Netjes maken van de blauwe balk */
-.masthead {
-  border-bottom: none !important;
+/* 3. Kleur en Lettertype (Voor je professionele uitstraling als gedragswetenschapper) */
+.greedy-nav, .greedy-nav .visible-links li {
+  background-color: #052633 !important;
 }
 
 .masthead__menu-item--active {
