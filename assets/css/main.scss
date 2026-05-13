@@ -167,3 +167,76 @@ h1, h2, h3, h4, .page__title {
 .masthead__menu-item--active {
   border-bottom-color: #052633 !important;
 }
+
+/* --- Strakke Uitlijning & Sidebar Breedte --- */
+
+/* 1. Verbreed de sidebar en lijn de tekst uit */
+@media (min-width: 64em) {
+  .sidebar {
+    width: 300px !important; 
+    padding-right: 40px !important; /* Meer ruimte tussen sidebar en tekst */
+    float: left;
+  }
+
+  /* Zorg dat de hoofdtekst (Welcome/Research) strak aansluit */
+  .archive, .page {
+    width: calc(100% - 300px) !important;
+    float: left;
+    padding-left: 0 !important; /* Verwijdert inspringing voor strakke lijn */
+  }
+
+  /* Lijn de koppen (H1) verticaal uit met de naam in de sidebar */
+  .page__title {
+    margin-top: 0 !important;
+    padding-top: 10px !important;
+  }
+}
+
+/* 2. Fix voor de naam linksboven (Masthead) */
+/* Lijn de naam in de header uit met de breedte van de sidebar content */
+.masthead__inner {
+  max-width: 1280px !important; /* Of de breedte van je totale container */
+  padding-left: 20px !important;
+}
+
+.masthead__menu-item--lg {
+  padding-left: 0 !important; /* Start de naam strak aan de linkerkant */
+}
+
+/* 3. Voorkom afbreken van woorden zoals 'Rotterdam' */
+.author__urls-wrapper li {
+  white-space: nowrap !important;
+  font-size: 0.9em;
+}
+
+/* 4. De Header 'grijs' definitief blauw maken */
+.greedy-nav {
+  background-color: #052633 !important;
+}
+
+.greedy-nav .visible-links li {
+  background-color: #052633 !important;
+}
+/* --- Volledige Uniformiteit in Lettertype en Kleur --- */
+
+/* 1. Dwing de zijbalk naar hetzelfde lettertype als de hoofdtekst */
+.sidebar, 
+.sidebar .author__content .author__name, 
+.sidebar .author__bio, 
+.sidebar .author__urls-wrapper,
+.sidebar .author__urls-wrapper li a {
+  font-family: "Roboto", sans-serif !important;
+  color: #1c1c1c !important; /* Dezelfde donkergrijze kleur als de hoofdtekst */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. Zorg dat de iconen in de sidebar niet de tekstkleur verstoren */
+.sidebar .author__urls-wrapper li i {
+  color: #052633 !important; /* Jouw blauwe kleur voor de iconen */
+}
+
+/* 3. Lijn de tekstgrootte rechtstreeks af */
+.sidebar .author__bio,
+.sidebar .author__urls-wrapper {
+  font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
+}
