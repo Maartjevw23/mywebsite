@@ -78,3 +78,33 @@ body,
   color: #000000 !important; /* Wordt iets donkerder als je er met de muis op staat */
   border-bottom: 1px solid #000000;
 }
+
+/* --- Header en Footer vastzetten op Donkerblauw --- */
+
+.masthead {
+  background-color: #112b3c !important; /* Pas deze hex-code aan naar jouw favoriete blauw */
+  border-bottom: none !important;
+}
+
+.page__footer {
+  background-color: #112b3c !important; /* Exact hetzelfde blauw als de header */
+  color: #ffffff !important;           /* Witte tekst in de footer */
+  border-top: 1px solid rgba(255,255,255,0.1); /* Subtiel lijntje */
+}
+
+/* De navigatie-links in de header wit maken */
+.masthead__menu-item a {
+  color: #ffffff !important;
+  opacity: 0.8;
+}
+
+.masthead__menu-item a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* De achtergrond van de rest van de pagina (Lichtblauw/Wit) */
+body {
+  background-color: #f0f7ff !important; 
+  color: #1c1c1c !important;
+}
