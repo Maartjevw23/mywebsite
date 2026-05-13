@@ -235,26 +235,37 @@ h1, h2, h3, h4, .page__title {
 .sidebar .author__urls-wrapper {
   font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
 }
-/* --- Onafhankelijke uitlijning Header & Menu --- */
+/* --- Herstel Zichtbaarheid & Horizontale Lijn --- */
 
 @media (min-width: 64em) {
-  /* 1. Hou de naam 'Maartje van Wijhe' strak links in de container */
-  .masthead__menu-item--lg {
-    position: absolute !important;
-    left: 0 !important;
-    padding-left: 0 !important;
-  }
-
-  /* 2. Schuif de menu-items (Research, etc.) onafhankelijk naar rechts */
-  /* Ik heb het getal verlaagd van 55px naar 45px voor de perfecte lijn */
-  .greedy-nav .visible-links {
-    margin-left: 45px !important; 
+  /* 1. Reset de container zodat alles weer zichtbaar is */
+  .masthead__inner {
     display: flex !important;
+    align-items: center !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    padding-left: 20px !important; /* Lijn je naam uit boven de foto */
   }
 
-  /* 3. Zorg dat de container de ruimte bewaart */
-  .greedy-nav {
-    position: relative !important;
-    padding-left: 180px !important; /* Ruimte gereserveerd voor je naam */
+  /* 2. Zorg dat je naam links blijft staan zonder anderen te hinderen */
+  .masthead__menu-item--lg {
+    margin-right: auto !important; /* Duwt de menu-items naar rechts */
+    padding-right: 20px !important;
   }
+
+  /* 3. Schuif de menu-items precies boven de hoofdtekst */
+  /* We gebruiken nu een margin-left op de hele nav-groep */
+  .greedy-nav {
+    display: flex !important;
+    flex-grow: 1 !important;
+  }
+
+  .greedy-nav .visible-links {
+    margin-left: 140px !important; /* Pas DIT getal aan om Research boven Welcome te krijgen */
+  }
+}
+
+/* De naam linksboven niet meer laten zweven */
+.masthead__menu-item--lg {
+  position: static !important;
 }
