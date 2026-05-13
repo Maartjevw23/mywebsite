@@ -235,16 +235,26 @@ h1, h2, h3, h4, .page__title {
 .sidebar .author__urls-wrapper {
   font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
 }
-/* --- Horizontale uitlijning van de menu-items --- */
+/* --- Onafhankelijke uitlijning Header & Menu --- */
 
 @media (min-width: 64em) {
-  /* Schuif de lijst met menu-items (Research, Teaching, CV) naar rechts */
-  .greedy-nav .visible-links {
-    margin-left: 55px !important; /* Pas dit getal aan tot het precies boven 'Welcome' staat */
+  /* 1. Hou de naam 'Maartje van Wijhe' strak links in de container */
+  .masthead__menu-item--lg {
+    position: absolute !important;
+    left: 0 !important;
+    padding-left: 0 !important;
   }
 
-  /* Zorg dat de individuele items geen extra ruimte links hebben */
-  .greedy-nav .visible-links li:first-child {
-    margin-left: 0 !important;
+  /* 2. Schuif de menu-items (Research, etc.) onafhankelijk naar rechts */
+  /* Ik heb het getal verlaagd van 55px naar 45px voor de perfecte lijn */
+  .greedy-nav .visible-links {
+    margin-left: 45px !important; 
+    display: flex !important;
+  }
+
+  /* 3. Zorg dat de container de ruimte bewaart */
+  .greedy-nav {
+    position: relative !important;
+    padding-left: 180px !important; /* Ruimte gereserveerd voor je naam */
   }
 }
