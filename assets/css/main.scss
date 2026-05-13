@@ -153,3 +153,17 @@ h1, h2, h3, h4, .page__title {
   margin-bottom: 0 !important;
   border-bottom: none !important;
 }
+
+/* Maak de navigatie-container en de knoppen volledig blauw */
+.greedy-nav {
+  background-color: #052633 !important;
+}
+
+.greedy-nav .visible-links li {
+  background-color: #052633 !important;
+}
+
+/* Verwijder de witte/grijze lijn onder de actieve menu-item */
+.masthead__menu-item--active {
+  border-bottom-color: #052633 !important;
+}
