@@ -125,3 +125,31 @@ h1, h2, h3, h4, .page__title {
   color: #052633 !important; /* Jouw blauwe kleur */
   font-weight: 700 !important;
 }
+
+/* --- Forceer de header naar één kleur blauw --- */
+
+/* Pak de navigatiebalk die vaak een eigen grijze kleur vasthoudt */
+.greedy-nav {
+  background-color: #052633 !important;
+}
+
+/* Verwijder de achtergrond van de knoppen-container */
+.greedy-nav button {
+  background-color: #052633 !important;
+  border: none !important;
+}
+
+/* De 'inner' container heeft vaak een max-width; 
+   we zorgen dat alles eromheen ook blauw is */
+.masthead__inner {
+  background-color: #052633 !important;
+  max-width: 100% !important; /* Vult de hele breedte */
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+/* Als er een witruimte tussen de header en de pagina zit: */
+.masthead {
+  margin-bottom: 0 !important;
+  border-bottom: none !important;
+}
