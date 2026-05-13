@@ -79,30 +79,73 @@ body,
   border-bottom: 1px solid #000000;
 }
 
-/* --- Handmatige aanpassing voor Blauwe Header/Footer (Met binnen-fix!) --- */
+/* --- Volledige fix voor de egale blauwe header --- */
 
-/* 1. De Header (de hele balk én de binnenkant) */
-.masthead,
-.masthead__inner {
-  background-color: #052633 !important; /* Pas dit aan naar jouw specifieke blauw */
-  border: none !important;              /* Haal eventuele randen weg */
-  box-shadow: none !important;          /* Haal eventuele schaduwen weg */
+/* We pakken alle mogelijke lagen: de balk, de container en de binnenkant */
+.masthead, 
+.masthead__inner, 
+.masthead__inner-ring,
+.masthead__container {
+  background-color: #052633 !important; /* Gebruik hier je exacte blauwe kleur */
+  border: none !important;
+  box-shadow: none !important;
 }
 
-/* 2. De navigatie-links in de header (wit) */
+/* Soms zit er een subtiele border of achtergrond op de navigatie-links zelf */
+.masthead__menu,
+.masthead__menu-item {
+  background-color: transparent !important;
+}
+
+/* Zorg dat de tekst wit blijft tegen het donkerblauw */
 .masthead__menu-item a {
   color: #ffffff !important;
+  background-color: transparent !important;
 }
 
-/* 3. De Footer */
-.page__footer {
-  background-color: #052633 !important; /* Zelfde blauw als de header */
-  color: #ffffff !important;
-  margin-top: 0 !important;
+/* Verwijder de onderste rand die vaak grijs is */
+.masthead {
+  border-bottom: none !important;
 }
 
 /* 4. De achtergrond van de rest van de pagina (Licht) */
 body {
   background-color: #f0f7ff !important;
   color: #1c1c1c !important;
+}
+
+/* --- Uniforme stijl voor de academische arbeidsmarkt --- */
+
+/* 1. Basis instellingen voor de hele site */
+body {
+  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  color: #1c1c1c !important; /* Donkergrijs voor optimale leesbaarheid */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 2. De zijbalk (onder je foto) en de bio */
+.sidebar, 
+.sidebar .author__bio, 
+.sidebar .author__urls-wrapper,
+.sidebar .author__content .author__name {
+  font-family: "Roboto", sans-serif !important;
+  color: #1c1c1c !important;
+}
+
+/* 3. De hoofdtekst op je pagina's (Welcome, Research, CV, etc.) */
+.page__content, 
+.page__content p, 
+.page__content li,
+.archive__item-excerpt {
+  font-family: "Roboto", sans-serif !important;
+  color: #1c1c1c !important;
+  line-height: 1.65 !important; /* Iets meer ruimte tussen regels oogt rustiger */
+  font-size: 1.05em !important;  /* Net iets groter voor betere leesbaarheid */
+}
+
+/* 4. Titels in je header-blauw voor herkenbaarheid */
+h1, h2, h3, h4, .page__title {
+  font-family: "Roboto", sans-serif !important;
+  color: #052633 !important; /* Jouw blauwe kleur */
+  font-weight: 700 !important;
 }
