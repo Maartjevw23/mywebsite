@@ -235,3 +235,16 @@ h1, h2, h3, h4, .page__title {
 .sidebar .author__urls-wrapper {
   font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
 }
+/* --- Horizontale uitlijning van de menu-items --- */
+
+@media (min-width: 64em) {
+  /* Schuif de lijst met menu-items (Research, Teaching, CV) naar rechts */
+  .greedy-nav .visible-links {
+    margin-left: 55px !important; /* Pas dit getal aan tot het precies boven 'Welcome' staat */
+  }
+
+  /* Zorg dat de individuele items geen extra ruimte links hebben */
+  .greedy-nav .visible-links li:first-child {
+    margin-left: 0 !important;
+  }
+}
