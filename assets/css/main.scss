@@ -168,53 +168,49 @@ h1, h2, h3, h4, .page__title {
   border-bottom-color: #052633 !important;
 }
 
-/* --- 1. Stabiele Layout & Uitlijning --- */
+/* --- Definitieve Layout Herstel --- */
 
 @media (min-width: 64em) {
-  /* We zetten de sidebar vast op zijn plek */
+  /* 1. Zet de sidebar 'zwevend' zodat deze de tekst niet naar beneden drukt */
   .sidebar {
     width: 260px !important;
-    float: left !important;
-    position: relative;
+    position: absolute !important;
     z-index: 10;
   }
 
-  /* We duwen de hoofdtekst met geweld naar rechts zodat hij NOOIT naar links kan */
+  /* 2. Zet de tekst op de juiste plek en lijn uit met 'Research' */
   .archive, .page {
+    margin-left: 300px !important; /* Ruimte voor de sidebar */
+    padding-top: 0 !important;
+    margin-top: 0 !important;
     display: block !important;
-    width: auto !important;
-    margin-left: 320px !important; /* Breedte sidebar + witruimte */
-    padding-left: 0 !important;
-    float: none !important;
-    clear: none !important;
   }
 
-  /* Zorg dat de titel (Welcome) niet te hoog staat ten opzichte van de foto */
+  /* 3. Zorg dat de titel (Welcome) direct bovenaan begint */
   .page__title {
-    margin-top: 10px !important;
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1 !important;
   }
 }
 
-/* 2. De naam linksboven uitlijnen met de profielfoto */
-/* We passen de padding van de blauwe balk aan tot het exact boven je foto staat */
+/* --- Uitlijning van de Namen --- */
+
+/* 4. Lijn de naam linksboven uit met de foto */
 .masthead__inner {
-  max-width: 1200px !important;
+  max-width: 1280px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 35px !important; /* Pas dit getal (35) aan voor de perfecte lijn */
+  padding-left: 1.5em !important; /* Pas dit getal aan voor de verticale lijn */
 }
 
 .masthead__menu-item--lg {
   padding-left: 0 !important;
 }
 
-/* 3. Kleur en Lettertype (Voor je professionele uitstraling als gedragswetenschapper) */
-.greedy-nav, .greedy-nav .visible-links li {
-  background-color: #052633 !important;
-}
-
-.masthead__menu-item--active {
-  border-bottom: none !important;
+/* 5. Extra witruimte bovenin de header verwijderen */
+.masthead {
+  margin-bottom: 2em !important;
 }
 /* --- Volledige Uniformiteit in Lettertype en Kleur --- */
 
