@@ -235,37 +235,3 @@ h1, h2, h3, h4, .page__title {
 .sidebar .author__urls-wrapper {
   font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
 }
-/* --- Herstel Zichtbaarheid & Horizontale Lijn --- */
-
-@media (min-width: 64em) {
-  /* 1. Reset de container zodat alles weer zichtbaar is */
-  .masthead__inner {
-    display: flex !important;
-    align-items: center !important;
-    max-width: 1200px !important;
-    margin: 0 auto !important;
-    padding-left: 5px !important; /* Lijn je naam uit boven de foto */
-  }
-
-  /* 2. Zorg dat je naam links blijft staan zonder anderen te hinderen */
-  .masthead__menu-item--lg {
-    margin-right: auto !important; /* Duwt de menu-items naar rechts */
-    padding-right: 20px !important;
-  }
-
-  /* 3. Schuif de menu-items precies boven de hoofdtekst */
-  /* We gebruiken nu een margin-left op de hele nav-groep */
-  .greedy-nav {
-    display: flex !important;
-    flex-grow: 1 !important;
-  }
-
-  .greedy-nav .visible-links {
-    margin-left: 120px !important; /* Pas DIT getal aan om Research boven Welcome te krijgen */
-  }
-}
-
-/* De naam linksboven niet meer laten zweven */
-.masthead__menu-item--lg {
-  position: static !important;
-}
