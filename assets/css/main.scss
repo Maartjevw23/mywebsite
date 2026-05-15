@@ -45,8 +45,10 @@ $background-color: #F0F8FF;
 ;
 
 /* Ruimte boven de titel op de homepagina vergroten */
-.home .page__title {
-  margin-top: 2.5em !important; /* Verhoog dit getal voor meer witruimte */
+.home .page__title, 
+.page__title {
+  margin-top: 3em !important;
+  padding-top: 10px !important;
 }
 /* Dwing de website-achtergrond naar heel lichtblauw (bijna wit) */
 html, body, .page__wrap, .initial-content {
