@@ -24,3 +24,5 @@ I will be on the 2026-2027 job market.
 My job market paper studies the effects of Dutch survivor benefit
 reforms on widows and their children's long-run outcomes,
 using a regression discontinuity design.
+
+You can contact me at <a href="mailto:vanwijhe@ese.eur.nl" style="color: #052633 !important; font-weight: bold;">vanwijhe@ese.eur.nl</a>
