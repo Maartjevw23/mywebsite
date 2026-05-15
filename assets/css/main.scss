@@ -91,34 +91,24 @@ h1, h2, h3, h4, .page__title {
   color: #052633 !important;
 }
 
-/* 5. LAYOUT & UITLIJNING (Fix voor Chrome & Edge uniformiteit) */
+/* 5. LAYOUT & UITLIJNING */
 @media (min-width: 64em) {
-  /* 1. Sidebar blijft op zijn plek */
   .sidebar {
     width: 260px !important;
     position: absolute !important;
     z-index: 10;
   }
 
-  /* 2. De tekstkolom: dynamische marge */
   .archive, .page {
     display: block !important;
-    /* calc(260px + 2vw) betekent: de breedte van de foto + een klein beetje flexibele ruimte */
-    margin-left: calc(260px + 3vw) !important; 
-    max-width: 800px !important; /* Voorkomt dat regels te lang worden op grote schermen */
+    /* 2vw is iets smaller dan 3vw, voor Chrome */
+    margin-left: calc(260px + 2vw) !important; 
+    max-width: 800px !important;
     padding-top: 0 !important;
     float: none !important;
     clear: both !important;
   }
 
-  .page__title {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-    line-height: 1 !important;
-  }
-}
-
-  /* Standaard startpunt titel voor Research/Teaching/CV */
   .page__title {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -134,7 +124,7 @@ h1, h2, h3, h4, .page__title {
   padding-left: 1.5em !important; 
 }
 
-/* 6. SPECIFIEKE HOME-PAGINA FIX (De "Enters" voor Welcome) */
+/* 6. SPECIFIEKE HOME-PAGINA FIX */
 .homepage-layout .page__content, 
 .homepage-layout .page__title {
   margin-top: 4em !important; 
