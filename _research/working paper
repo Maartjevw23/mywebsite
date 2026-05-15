@@ -6,54 +6,53 @@ share: false
 ---
 
 <style>
-  /* Ruimte onder paginatitel verkleinen */
+  /* Algemene pagina-instellingen */
   .page__inner-title { margin-bottom: 0.5em !important; }
-  .page__content h2 { margin-top: 0.5em !important; }
+  .page__content h2 { margin-top: 0.8em !important; color: #052633 !important; }
   
-  /* Standaard browser-driehoekje verbergen */
+  /* Verberg standaard browser-marker */
   details summary::-webkit-details-marker { display: none; }
-  details summary { list-style: none; }
+  details summary { list-style: none; outline: none; }
 
-  /* Horizontale strepen veel compacter maken */
-  .page__content hr {
-    border: 0;
-    border-top: 1px solid #e2e8f0 !important;
-    margin: 1.2em 0 !important;
-  }
-
-  /* Ruimte rondom de titels en auteursnamen strakker trekken */
-  .page__content h3 {
-    margin-top: 0 !important;
-    margin-bottom: 0.1em !important; /* Iets strakker op de auteursnaam */
-  }
-
-  /* Auteursnamen ("with...") kleiner maken */
+  /* De Auteurslijn ("with...") - Nu extra verfijnd */
   .author-line {
-    font-size: 0.9em !important;
-    margin-top: 0 !important;
-    margin-bottom: 0.6em !important;
-    color: #555;
+    font-size: 0.82em !important; /* Nog iets kleiner voor beter contrast */
+    margin-top: -0.2em !important; /* Trekt het dichter naar de titel */
+    margin-bottom: 0.5em !important;
+    color: #666 !important; /* Iets lichter grijs oogt rustiger */
+    line-height: 1.2 !important; /* Minder witruimte tussen titel en auteurs */
   }
 
-  /* Abstract-kopje en tekst kleiner maken */
+  /* Abstract-kopje en tekst - Uniform maken */
   details summary {
     font-weight: bold;
     cursor: pointer;
     color: #494e52;
-    font-size: 0.95em !important; /* Kleiner dan voorheen */
+    font-size: 0.85em !important; /* Afgestemd op de auteurslijn */
+    transition: color 0.2s ease;
   }
+  
+  details summary:hover { color: #052633; }
 
   .abstract-text {
-    margin-top: 0.6em;
+    margin-top: 0.5em;
     text-align: justify;
     line-height: 1.5;
-    font-size: 0.9em !important; /* Tekst in de abstract ook kleiner */
+    font-size: 0.85em !important; /* Precies even groot als het kopje */
+    color: #333;
   }
 
-  /* Compacte aansluiting voor de uitklapbare abstracts */
-  details {
+  /* Compacte lijnen */
+  .page__content hr {
+    border: 0;
+    border-top: 1px solid #e2e8f0 !important;
+    margin: 1.5em 0 !important;
+  }
+
+  .page__content h3 {
     margin-top: 0 !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 0.1em !important;
+    font-size: 1.15em !important; /* Titels blijven duidelijk aanwezig */
   }
 </style>
 
