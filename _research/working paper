@@ -6,26 +6,24 @@ share: false
 ---
 
 <style>
-  /* 1. Algemene pagina instellingen */
-  .page__inner-title { margin-bottom: 0.5em !important; }
-  .page__content h2 { margin-top: 0.8em !important; color: #052633 !important; }
-
-  /* 2. De "with..." regel: Alles uniform op 0.85em */
+  /* 1. De "with..." regel: Alles visueel identiek maken */
   .author-line, 
   .author-line em, 
   .author-line a, 
   .author-line span {
-    font-size: 0.85em !important; 
-    font-weight: normal !important; 
+    font-size: 0.82em !important; /* Iets kleiner om exact te matchen met de namen */
+    font-weight: 400 !important;  /* Dwingt een normale dikte af, niet bold */
+    font-style: italic !important;
     color: #666 !important;
     line-height: 1.2 !important;
-    font-style: italic !important;
+    letter-spacing: 0.01em !important; /* Trekt de tekstvorm gelijk */
     text-decoration: none !important;
   }
 
-  /* Subtiele styling voor de namen (links) */
+  /* 2. Subtiele link-styling voor de namen */
   .author-line a {
-    border-bottom: 1px dotted #ccc !important; 
+    border-bottom: 1px dotted #bbb !important; 
+    display: inline-block; /* Helpt bij een consistente rendering van de link */
   }
 
   .author-line a:hover {
@@ -33,44 +31,26 @@ share: false
     border-bottom: 1px solid #052633 !important;
   }
 
+  /* 3. Marges voor de regel zelf */
   .author-line {
-    margin-top: -0.2em !important;
-    margin-bottom: 0.8em !important;
+    margin-top: -0.3em !important;
+    margin-bottom: 1.0em !important;
     display: block;
   }
 
-  /* 3. Abstract-kopje en inhoud: Uniform op 0.85em */
+  /* 4. Abstract en koppen (ter referentie) */
   details summary {
     font-weight: bold;
     cursor: pointer;
     color: #494e52;
     font-size: 0.85em !important; 
     list-style: none;
-    outline: none;
   }
 
   .abstract-text {
-    margin-top: 0.5em;
-    text-align: justify;
-    line-height: 1.5;
     font-size: 0.85em !important;
+    text-align: justify;
     color: #444;
-  }
-
-  /* Browser markers verbergen */
-  details summary::-webkit-details-marker { display: none; }
-
-  /* 4. Titels en lijnen */
-  .page__content h3 {
-    margin-top: 0 !important;
-    margin-bottom: 0.1em !important;
-    font-size: 1.1em !important;
-  }
-
-  .page__content hr {
-    border: 0;
-    border-top: 1px solid #e2e8f0 !important;
-    margin: 1.5em 0 !important;
   }
 </style>
 
