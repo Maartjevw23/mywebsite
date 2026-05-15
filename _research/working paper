@@ -40,6 +40,7 @@ share: false
     margin-bottom: 0.8em !important;
     display: block;
   }
+
 </style>
 
   /* Abstract-kopje en inhoud: Uniform op 0.85em */
