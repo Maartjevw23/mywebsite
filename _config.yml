@@ -13,10 +13,9 @@ title                    : "Maartje van Wijhe"
 title_separator          : "-"
 name                     : &name "Maartje van Wijhe"
 description              : &description "PhD candidate in Applied Economics, Erasmus University Rotterdam"   # Update this with a general description of your site, this is the default if not overridden by a page
-baseurl                  : "https://maartjevanwijhe.com/"
+baseurl: "https://maartjevanwijhe.com/"
+canonifyURLs: true
 relativeURLs: false
-canonifyURLs: false  # Probeer deze nu eens op 'false' te zetten
-uglyURLs: false
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
