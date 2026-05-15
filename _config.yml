@@ -13,9 +13,8 @@ title                    : "Maartje van Wijhe"
 title_separator          : "-"
 name                     : &name "Maartje van Wijhe"
 description              : &description "PhD candidate in Applied Economics, Erasmus University Rotterdam"   # Update this with a general description of your site, this is the default if not overridden by a page
-baseurl: "https://maartjevanwijhe.com/"
-canonifyURLs: true
-relativeURLs: false
+url: "https://maartjevanwijhe.com"
+baseurl: ""  # Laat dit helemaal leeg tussen de aanhalingstekens
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -215,23 +214,22 @@ kramdown:
   enable_coderay: false
 
 
-# These settings control the types of collections used by the template
 collections:
   teaching:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/teaching
+    permalink: /teaching/:path/
   research:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/research
+    permalink: /research/:path/
   portfolio:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/portfolio
+    permalink: /portfolio/:path/
   talks:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/talks
+    permalink: /talks/:path/
   CV:
     output: true
-    permalink: /https://maartjevw23.github.io/mywebsite/cv-json
+    permalink: /cv-json/:path/
 
 
 # These settings control how pages and collections are included in the site
