@@ -18,18 +18,36 @@ share: false
   .page__content hr {
     border: 0;
     border-top: 1px solid #e2e8f0 !important;
-    margin: 1.2em 0 !important; /* Ruimte boven en onder de streep gehalveerd */
+    margin: 1.2em 0 !important;
   }
 
   /* Ruimte rondom de titels en auteursnamen strakker trekken */
   .page__content h3 {
-    margin-top: 0 !important;     /* Verwijdert witruimte boven de papertitel */
-    margin-bottom: 0.2em !important;  /* Trekt de auteursnaam dichter naar de titel toe */
+    margin-top: 0 !important;
+    margin-bottom: 0.1em !important; /* Iets strakker op de auteursnaam */
   }
 
-  .page__content p {
-    margin-top: 0 !important;     /* Voorkomt dat alinea's omhoog geduwd worden */
-    margin-bottom: 0.6em !important; /* Compacte ruimte onder de auteursnaam */
+  /* Auteursnamen ("with...") kleiner maken */
+  .author-line {
+    font-size: 0.9em !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.6em !important;
+    color: #555;
+  }
+
+  /* Abstract-kopje en tekst kleiner maken */
+  details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #494e52;
+    font-size: 0.95em !important; /* Kleiner dan voorheen */
+  }
+
+  .abstract-text {
+    margin-top: 0.6em;
+    text-align: justify;
+    line-height: 1.5;
+    font-size: 0.9em !important; /* Tekst in de abstract ook kleiner */
   }
 
   /* Compacte aansluiting voor de uitklapbare abstracts */
@@ -42,62 +60,51 @@ share: false
 
 <h2>Working papers</h2>
 
-<!-- EERSTE PAPER -->
 <h3>Rising Temperatures and Domestic Violence in Peru: Evidence and Mechanisms</h3>
-<p><em>with <a href="https://scholar.google.com/citations?user=I_hEMQYAAAAJ&hl=en" target="_blank">Fiorella Parra-Mujica</a></em></p>
+<p class="author-line"><em>with <a href="https://sites.google.com/view/fiorellaparramujica" target="_blank">Fiorella Parra-Mujica</a></em></p>
 
 <details>
-  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
-    ▸ Abstract
-  </summary>
-  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
+  <summary>▸ Abstract</summary>
+  <div class="abstract-text">
     <p>We study the causal impact of ambient temperature on domestic violence (DV) in Peru using three administrative datasets - police reports, women's emergency center visits, and a national helpline - matched to high-resolution ERA5 satellite weather data. Exploiting plausibly exogenous day-to-day temperature variation within a flexible binned fixed-effects design, we find that days above 32°C increase police-reported DV by 19% relative to the daily mean, with each additional degree Celsius associated with a 3.5% increase. Cumulative lag models establish that these represent genuinely new incidents rather than temporal displacement.</p>
     <p>We then examine three candidate mechanisms. Temperature significantly increases alcohol consumption and is associated with proportionally larger increases in DV involving intoxicated perpetrators. Temperature reduces hours worked and labor income among informally employed women—generating immediate bargaining shocks within households that increase domestic violence. A sector decomposition shows that this income loss is not confined to physically outdoor occupations: it occurs uniformly across informal workers in agriculture, manufacturing, and personal services alike, indicating that the binding constraint is the absence of contractual income protection rather than physical heat exposure per se. We find no evidence for effects operating through depressive symptoms or sleep disruption. Our results underscore that DV responds to heat through intra-household mechanisms distinct from those governing other crimes.</p>
   </div>
 </details>
 
-<hr style="margin: 2em 0;">
+<hr>
 
-<!-- TWEEDE PAPER -->
 <h3>Cold, heat and health: the impact of temperature on mortality and hospitalizations</h3>
-<p><em>with <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.eur.nl/people/tom-van-ourti" target="_blank">Tom van Ourti</a></em></p>
+<p class="author-line"><em>with <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="https://scholar.google.com/citations?user=_qHlls0AAAAJ&hl=nl" target="_blank">Tom van Ourti</a></em></p>
 
 <details>
-  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
-    ▸ Abstract
-  </summary>
-  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
+  <summary>▸ Abstract</summary>
+  <div class="abstract-text">
     <p>We study the short-term effects of hot and cold temperatures on mortality and urgent hospitalizations in the Netherlands from 1995 to 2019. Linking daily mortality and hospitalization records to daily meteorological data from ground weather stations, we estimate effects within 0-30 days after exposure to a hot or cold day. We find that both heat and cold increase mortality among the elderly, whereas mortality in other age groups is unaffected. By contrast, hospitalizations attributable to heat or cold rise among younger age groups - particularly children - but only mortality rises among the elderly.</p>
     <p>Evidence on timing suggest that the absent hospitalization response to heat reflects that many elderly either do not reach a hospital on time or, for those in institutional care, are not transferred to hospital; in turn, the longer lag from cold exposure to death appears to allow more time for hospital admission.</p>
   </div>
 </details>
 
-<hr style="margin: 3em 0;">
+<hr>
 
 <h2>Work in progress</h2>
 
-<!-- WIP 1 (JOB MARKET PAPER) -->
 <h3>Spousal and Intergenerational Effects of Survivor Benefit Reductions (job market paper)</h3>
 
 <details>
-  <summary style="font-weight: bold; cursor: pointer; color: #494e52; font-size: 1.1em;">
-    ▸ Abstract
-  </summary>
-  <div style="margin-top: 0.8em; text-align: justify; line-height: 1.5;">
+  <summary style="margin-top: 0.5em;">▸ Abstract</summary>
+  <div class="abstract-text">
     <p>This paper studies household responses to survivor benefit reductions following spousal death, exploiting two Dutch reforms to estimate causal effects on widows and their children. Using administrative data in a regression discontinuity design, I find that a stricter means test on other sources of income leads to a reduction in widow's employment income, without an impact on employment. Intergenerational effects are concentrated in sons below 18 at the time of death, who have lower educational attainment and reduced earnings in adulthood. A reform restricting benefit eligibility to widows caring for a minor child leads widows to increase employment and substitute into other public programs upon losing eligibility, with no anticipatory response beforehand. Daughters who experienced paternal death between ages 19 and 23 - whose mothers most often substitute into social assistance - have persistently higher social assistance use in adulthood, suggesting an intergenerational cycle of program dependence. My findings underscore the importance of accounting for intergenerational effects, as incentives to discourage maternal reliance on benefits can have unintended negative consequences for children. Additionally, the results highlight that first- and second-generation effects of survivor benefit policies depend on benefit structure, not merely benefit level.</p>
   </div>
 </details>
 
-<hr style="margin: 2em 0;">
+<hr>
 
-<!-- WIP 2 -->
 <h3>Health and Marriage</h3>
-<p><em>with <a href="carolinaarteaga.com" target="_blank">Carolina Arteaga</a>, <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="nataliavigezzi.com" target="_blank">Natalia Vigezzi</a></em></p>
+<p class="author-line"><em>with <a href="https://www.carolinaarteaga.com" target="_blank">Carolina Arteaga</a>, <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.nataliavigezzi.com" target="_blank">Natalia Vigezzi</a></em></p>
 
-<hr style="margin: 2em 0;">
+<hr>
 
-<!-- WIP 3 -->
 <h3>Parental Health Shocks and Child Wellbeing</h3>
-<p><em>with <a href="carolinaarteaga.com" target="_blank">Carolina Arteaga</a>, <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="nataliavigezzi.com" target="_blank">Natalia Vigezzi</a></em></p>
+<p class="author-line"><em>with <a href="https://www.carolinaarteaga.com" target="_blank">Carolina Arteaga</a>, <a href="https://www.pilargarciagomez.com/" target="_blank">Pilar Garcia Gomez</a> and <a href="https://www.nataliavigezzi.com" target="_blank">Natalia Vigezzi</a></em></p>
 
-<hr style="margin: 2em 0;">
+<hr>
