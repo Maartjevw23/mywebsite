@@ -93,21 +93,30 @@ h1, h2, h3, h4, .page__title {
 
 /* 5. LAYOUT & UITLIJNING (Fix voor Chrome & Edge uniformiteit) */
 @media (min-width: 64em) {
-  /* Fixeer de sidebar op een vaste breedte */
+  /* 1. Sidebar blijft op zijn plek */
   .sidebar {
     width: 260px !important;
     position: absolute !important;
     z-index: 10;
   }
 
-  /* Dwing de tekstkolom tot een vaste afstand zodat deze nooit de sidebar overlapt */
+  /* 2. De tekstkolom: dynamische marge */
   .archive, .page {
-    margin-left: 320px !important; /* Verhoogd voor een veilige buffer in alle browsers */
     display: block !important;
+    /* calc(260px + 2vw) betekent: de breedte van de foto + een klein beetje flexibele ruimte */
+    margin-left: calc(260px + 3vw) !important; 
+    max-width: 800px !important; /* Voorkomt dat regels te lang worden op grote schermen */
     padding-top: 0 !important;
     float: none !important;
     clear: both !important;
   }
+
+  .page__title {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+    line-height: 1 !important;
+  }
+}
 
   /* Standaard startpunt titel voor Research/Teaching/CV */
   .page__title {
