@@ -6,53 +6,63 @@ share: false
 ---
 
 <style>
-  /* Algemene pagina-instellingen */
+  /* Algemene instellingen */
   .page__inner-title { margin-bottom: 0.5em !important; }
   .page__content h2 { margin-top: 0.8em !important; color: #052633 !important; }
   
-  /* Verberg standaard browser-marker */
-  details summary::-webkit-details-marker { display: none; }
-  details summary { list-style: none; outline: none; }
-
-  /* De Auteurslijn ("with...") - Nu extra verfijnd */
-  .author-line {
-    font-size: 0.82em !important; /* Nog iets kleiner voor beter contrast */
-    margin-top: -0.2em !important; /* Trekt het dichter naar de titel */
-    margin-bottom: 0.5em !important;
-    color: #666 !important; /* Iets lichter grijs oogt rustiger */
-    line-height: 1.2 !important; /* Minder witruimte tussen titel en auteurs */
+  /* De "with..." regel: Forceer alles naar dezelfde grootte als de abstract */
+  .author-line, 
+  .author-line em, 
+  .author-line a {
+    font-size: 0.85em !important; /* EXACT dezelfde maat als de abstract */
+    color: #666 !important;
+    line-height: 1.2 !important;
+    text-decoration: none; /* Optioneel: link-onderstreping weg voor rust */
   }
 
-  /* Abstract-kopje en tekst - Uniform maken */
+  .author-line a:hover {
+    text-decoration: underline;
+    color: #052633 !important;
+  }
+
+  .author-line {
+    margin-top: -0.2em !important;
+    margin-bottom: 0.8em !important;
+    display: block; /* Zorgt dat de marges goed werken */
+  }
+
+  /* Abstract-kopje en inhoud: Uniform op 0.85em */
   details summary {
     font-weight: bold;
     cursor: pointer;
     color: #494e52;
-    font-size: 0.85em !important; /* Afgestemd op de auteurslijn */
-    transition: color 0.2s ease;
+    font-size: 0.85em !important; 
+    list-style: none;
+    outline: none;
   }
-  
-  details summary:hover { color: #052633; }
 
   .abstract-text {
     margin-top: 0.5em;
     text-align: justify;
     line-height: 1.5;
-    font-size: 0.85em !important; /* Precies even groot als het kopje */
-    color: #333;
+    font-size: 0.85em !important;
+    color: #444;
   }
 
-  /* Compacte lijnen */
+  /* Browser markers verbergen */
+  details summary::-webkit-details-marker { display: none; }
+
+  /* Titels en lijnen */
+  .page__content h3 {
+    margin-top: 0 !important;
+    margin-bottom: 0.1em !important;
+    font-size: 1.1em !important;
+  }
+
   .page__content hr {
     border: 0;
     border-top: 1px solid #e2e8f0 !important;
     margin: 1.5em 0 !important;
-  }
-
-  .page__content h3 {
-    margin-top: 0 !important;
-    margin-bottom: 0.1em !important;
-    font-size: 1.15em !important; /* Titels blijven duidelijk aanwezig */
   }
 </style>
 
@@ -65,8 +75,7 @@ share: false
 <details>
   <summary>▸ Abstract</summary>
   <div class="abstract-text">
-    <p>We study the causal impact of ambient temperature on domestic violence (DV) in Peru using three administrative datasets - police reports, women's emergency center visits, and a national helpline - matched to high-resolution ERA5 satellite weather data. Exploiting plausibly exogenous day-to-day temperature variation within a flexible binned fixed-effects design, we find that days above 32°C increase police-reported DV by 19% relative to the daily mean, with each additional degree Celsius associated with a 3.5% increase. Cumulative lag models establish that these represent genuinely new incidents rather than temporal displacement.</p>
-    <p>We then examine three candidate mechanisms. Temperature significantly increases alcohol consumption and is associated with proportionally larger increases in DV involving intoxicated perpetrators. Temperature reduces hours worked and labor income among informally employed women—generating immediate bargaining shocks within households that increase domestic violence. A sector decomposition shows that this income loss is not confined to physically outdoor occupations: it occurs uniformly across informal workers in agriculture, manufacturing, and personal services alike, indicating that the binding constraint is the absence of contractual income protection rather than physical heat exposure per se. We find no evidence for effects operating through depressive symptoms or sleep disruption. Our results underscore that DV responds to heat through intra-household mechanisms distinct from those governing other crimes.</p>
+    <p>We study the causal impact of ambient temperature on domestic violence (DV) in Peru using three administrative datasets - police reports, women's emergency center visits, and a national helpline - matched to high-resolution ERA5 satellite weather data. Exploiting plausibly exogenous day-to-day temperature variation within a flexible binned fixed-effects design, we find that days above 32°C increase police-reported DV by 19% relative to the daily mean, with each additional degree Celsius associated with a 3.5% increase. Cumulative lag models establish that these represent genuinely new incidents rather than temporal displacement. We then examine three candidate mechanisms. Temperature significantly increases alcohol consumption and is associated with proportionally larger increases in DV involving intoxicated perpetrators. Temperature reduces hours worked and labor income among informally employed women—generating immediate bargaining shocks within households that increase domestic violence. A sector decomposition shows that this income loss is not confined to physically outdoor occupations: it occurs uniformly across informal workers in agriculture, manufacturing, and personal services alike, indicating that the binding constraint is the absence of contractual income protection rather than physical heat exposure per se. We find no evidence for effects operating through depressive symptoms or sleep disruption. Our results underscore that DV responds to heat through intra-household mechanisms distinct from those governing other crimes.</p>
   </div>
 </details>
 
@@ -78,8 +87,7 @@ share: false
 <details>
   <summary>▸ Abstract</summary>
   <div class="abstract-text">
-    <p>We study the short-term effects of hot and cold temperatures on mortality and urgent hospitalizations in the Netherlands from 1995 to 2019. Linking daily mortality and hospitalization records to daily meteorological data from ground weather stations, we estimate effects within 0-30 days after exposure to a hot or cold day. We find that both heat and cold increase mortality among the elderly, whereas mortality in other age groups is unaffected. By contrast, hospitalizations attributable to heat or cold rise among younger age groups - particularly children - but only mortality rises among the elderly.</p>
-    <p>Evidence on timing suggest that the absent hospitalization response to heat reflects that many elderly either do not reach a hospital on time or, for those in institutional care, are not transferred to hospital; in turn, the longer lag from cold exposure to death appears to allow more time for hospital admission.</p>
+    <p>We study the short-term effects of hot and cold temperatures on mortality and urgent hospitalizations in the Netherlands from 1995 to 2019. Linking daily mortality and hospitalization records to daily meteorological data from ground weather stations, we estimate effects within 0-30 days after exposure to a hot or cold day. We find that both heat and cold increase mortality among the elderly, whereas mortality in other age groups is unaffected. By contrast, hospitalizations attributable to heat or cold rise among younger age groups - particularly children - but only mortality rises among the elderly. Evidence on timing suggest that the absent hospitalization response to heat reflects that many elderly either do not reach a hospital on time or, for those in institutional care, are not transferred to hospital; in turn, the longer lag from cold exposure to death appears to allow more time for hospital admission.</p>
   </div>
 </details>
 
