@@ -2,6 +2,7 @@
 permalink: /
 title: "Welcome!"
 author_profile: true
+classes: homepage-layout
 ---
 
 I am a PhD candidate in the Applied Economics department at Erasmus University
