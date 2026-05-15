@@ -10,26 +10,37 @@ share: false
   .page__inner-title { margin-bottom: 0.5em !important; }
   .page__content h2 { margin-top: 0.8em !important; color: #052633 !important; }
   
-  /* De "with..." regel: Forceer alles naar dezelfde grootte als de abstract */
+<style>
+  /* De "with..." regel: Forceer alles (tekst, em-tags én links) naar 0.85em */
   .author-line, 
   .author-line em, 
-  .author-line a {
-    font-size: 0.85em !important; /* EXACT dezelfde maat als de abstract */
+  .author-line a, 
+  .author-line span {
+    font-size: 0.85em !important; /* Gelijk aan jouw abstract-kopje */
+    font-weight: normal !important; /* Voorkomt dat de namen dikker ogen dan 'with' */
     color: #666 !important;
     line-height: 1.2 !important;
-    text-decoration: none; /* Optioneel: link-onderstreping weg voor rust */
+    font-style: italic !important;
+    text-decoration: none !important;
+  }
+
+  /* Subtiele styling voor de namen (links) */
+  .author-line a {
+    border-bottom: 1px dotted #ccc !important; /* Maakt de namen herkenbaar als link zonder dat het druk oogt */
   }
 
   .author-line a:hover {
-    text-decoration: underline;
     color: #052633 !important;
+    border-bottom: 1px solid #052633 !important;
+    text-decoration: none !important;
   }
 
   .author-line {
     margin-top: -0.2em !important;
     margin-bottom: 0.8em !important;
-    display: block; /* Zorgt dat de marges goed werken */
+    display: block;
   }
+</style>
 
   /* Abstract-kopje en inhoud: Uniform op 0.85em */
   details summary {
