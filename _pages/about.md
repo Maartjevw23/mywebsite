@@ -7,7 +7,7 @@ author_profile: true
 <style>
   /* Forceert alleen op deze pagina dat de titel en content zakken */
   .page__title {
-    margin-top: 40px !important; /* Pas dit getal aan voor meer/minder ruimte */
+    margin-top: 25px !important; /* Pas dit getal aan voor meer/minder ruimte */
   }
 
   .page__content {
