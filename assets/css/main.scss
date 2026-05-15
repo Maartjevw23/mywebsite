@@ -1,28 +1,17 @@
 ---
 ---
-/* Wijzig de achtergrondkleur van de gehele site naar Blue Ashes */
+/* 1. VARIABELEN & IMPORTS */
 $background-color: #F0F8FF;
-
-/*
- * This file controls what is imported from /_sass
- *
- * Note that the files are processed in the order they are imported, so they are partly
-   sorted by the dependencies. Also, the first two lines of the file are required by Jekyll.
- */
 
 @import
     "vendor/breakpoint/breakpoint",
-
     "themes",
     "theme/{{ site.site_theme | default: 'default' | append: '_light' }}",
     "theme/{{ site.site_theme | default: 'default' | append: '_dark' }}",
-
     "include/mixins",
     "vendor/susy/susy",
-
     "layout/reset",
     "layout/base",
-
     "include/utilities",
     "layout/tables",
     "layout/buttons",
@@ -31,50 +20,41 @@ $background-color: #F0F8FF;
     "layout/navigation",
     "layout/footer",
     "syntax",
-
     "layout/forms",
-
     "layout/page",
     "layout/archive",
     "layout/sidebar",
     "layout/json_cv",
-
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
     "vendor/font-awesome/brands"
 ;
 
-/* Ruimte boven de titel op de homepagina vergroten */
-.home .page__title, 
-.page__title {
-  margin-top: 3em !important;
-  padding-top: 10px !important;
+/* 2. ALGEMENE STIJL (Kleur & Lettertype) */
+body {
+  font-family: "Roboto", sans-serif !important;
+  color: #1c1c1c !important;
+  background-color: #F0F8FF !important;
+  -webkit-font-smoothing: antialiased;
 }
-/* Dwing de website-achtergrond naar heel lichtblauw (bijna wit) */
-html, body, .page__wrap, .initial-content {
+
+html, .page__wrap, .initial-content {
   background-color: #F0F8FF !important;
 }
 
-/* Zorg dat de sidebar (je profielfoto-blok) transparant blijft en mooi meekleurt */
-.sidebar {
-  background-color: transparent !important;
+/* Koppen in jouw blauwe kleur */
+h1, h2, h3, h4, .page__title {
+  color: #052633 !important;
+  font-weight: 700 !important;
 }
 
-/* Pas alle hoofdteksten, titels en links aan naar de headerkleur (#494e52) */
-body, 
-.page__content, 
-.page__content p,
-.page__content h1, 
-.page__content h2, 
-.page__content h3, 
-.page__content h4,
-.archive__item-title,
-.sidebar .profile__name,
-.sidebar .profile__bio {
-  color: #1c1c1c !important;
+/* Hoofdtekst instellingen */
+.page__content p, .page__content li {
+  line-height: 1.65 !important;
+  font-size: 1.05em !important;
 }
 
-/* Zorg dat links op de pagina's ook deze kleur gebruiken en subtiel onderstreept worden */
+/* Links op de pagina's */
 .page__content a {
   color: #1c1c1c !important;
   text-decoration: none !important;
@@ -82,118 +62,49 @@ body,
 }
 
 .page__content a:hover {
-  color: #000000 !important; /* Wordt iets donkerder als je er met de muis op staat */
+  color: #000000 !important;
   border-bottom: 1px solid #000000;
 }
 
-/* Fix voor een egale header en footer */
-.masthead, .masthead__inner, .greedy-nav {
-  background-color: #052633 !important; /* Jouw blauw */
+/* 3. HEADER & FOOTER (Volledig Blauw) */
+.masthead, .greedy-nav, .greedy-nav .visible-links li, .greedy-nav button {
+  background-color: #052633 !important;
   border: none !important;
 }
 
 .page__footer {
-  background-color: #052633 !important; /* Nu geforceerd blauw */
+  background-color: #052633 !important;
   color: #ffffff !important;
 }
 
-/* --- Uniforme stijl voor de academische arbeidsmarkt --- */
-
-/* 1. Basis instellingen voor de hele site */
-body {
-  font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
-  color: #1c1c1c !important; /* Donkergrijs voor optimale leesbaarheid */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 2. De zijbalk (onder je foto) en de bio */
-.sidebar, 
-.sidebar .author__bio, 
-.sidebar .author__urls-wrapper,
-.sidebar .author__content .author__name {
-  font-family: "Roboto", sans-serif !important;
-  color: #1c1c1c !important;
-}
-
-/* 3. De hoofdtekst op je pagina's (Welcome, Research, CV, etc.) */
-.page__content, 
-.page__content p, 
-.page__content li,
-.archive__item-excerpt {
-  font-family: "Roboto", sans-serif !important;
-  color: #1c1c1c !important;
-  line-height: 1.65 !important; /* Iets meer ruimte tussen regels oogt rustiger */
-  font-size: 1.05em !important;  /* Net iets groter voor betere leesbaarheid */
-}
-
-/* 4. Titels in je header-blauw voor herkenbaarheid */
-h1, h2, h3, h4, .page__title {
-  font-family: "Roboto", sans-serif !important;
-  color: #052633 !important; /* Jouw blauwe kleur */
-  font-weight: 700 !important;
-}
-
-/* --- Forceer de header naar één kleur blauw --- */
-
-/* Pak de navigatiebalk die vaak een eigen grijze kleur vasthoudt */
-.greedy-nav {
-  background-color: #052633 !important;
-}
-
-/* Verwijder de achtergrond van de knoppen-container */
-.greedy-nav button {
-  background-color: #052633 !important;
-  border: none !important;
-}
-
-/* De 'inner' container heeft vaak een max-width; 
-   we zorgen dat alles eromheen ook blauw is */
-.masthead__inner {
-  background-color: #052633 !important;
-  max-width: 100% !important; /* Vult de hele breedte */
-  padding-left: 1em !important;
-  padding-right: 1em !important;
-}
-
-/* Als er een witruimte tussen de header en de pagina zit: */
-.masthead {
-  margin-bottom: 0 !important;
-  border-bottom: none !important;
-}
-
-/* Maak de navigatie-container en de knoppen volledig blauw */
-.greedy-nav {
-  background-color: #052633 !important;
-}
-
-.greedy-nav .visible-links li {
-  background-color: #052633 !important;
-}
-
-/* Verwijder de witte/grijze lijn onder de actieve menu-item */
 .masthead__menu-item--active {
   border-bottom-color: #052633 !important;
 }
 
-/* --- Definitieve Layout Herstel --- */
+/* 4. SIDEBAR (Profielfoto blok) */
+.sidebar {
+  background-color: transparent !important;
+  font-family: "Roboto", sans-serif !important;
+}
 
+.sidebar .author__urls-wrapper li i {
+  color: #052633 !important; /* Iconen in blauw */
+}
+
+/* 5. LAYOUT & UITLIJNING (Desktop) */
 @media (min-width: 64em) {
-  /* 1. Zet de sidebar 'zwevend' zodat deze de tekst niet naar beneden drukt */
   .sidebar {
     width: 260px !important;
     position: absolute !important;
     z-index: 10;
   }
 
-  /* 2. Zet de tekst op de juiste plek en lijn uit met 'Research' */
   .archive, .page {
-    margin-left: 300px !important; /* Ruimte voor de sidebar */
-    padding-top: 0 !important;
-    margin-top: 0 !important;
+    margin-left: 300px !important;
     display: block !important;
   }
 
-  /* 3. Zorg dat de titel (Welcome) direct bovenaan begint */
+  /* De standaard-titel begint bovenaan op Research/Teaching/CV */
   .page__title {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -201,44 +112,21 @@ h1, h2, h3, h4, .page__title {
   }
 }
 
-/* --- Uitlijning van de Namen --- */
-
-/* 4. Lijn de naam linksboven uit met de foto */
+/* Naam linksboven uitlijnen */
 .masthead__inner {
   max-width: 1280px !important;
   margin-left: auto !important;
   margin-right: auto !important;
-  padding-left: 1.5em !important; /* Pas dit getal aan voor de verticale lijn */
+  padding-left: 1.5em !important; 
 }
 
-.masthead__menu-item--lg {
-  padding-left: 0 !important;
+/* 6. SPECIFIEKE HOME-PAGINA FIX (De "Enters") */
+/* Dit werkt alleen als je 'classes: homepage-layout' in about.md hebt gezet */
+.homepage-layout .page__content, 
+.homepage-layout .page__title {
+  margin-top: 4em !important; /* Dit creëert de witruimte boven Welcome */
 }
 
-/* 5. Extra witruimte bovenin de header verwijderen */
-.masthead {
-  margin-bottom: 2em !important;
-}
-/* --- Volledige Uniformiteit in Lettertype en Kleur --- */
-
-/* 1. Dwing de zijbalk naar hetzelfde lettertype als de hoofdtekst */
-.sidebar, 
-.sidebar .author__content .author__name, 
-.sidebar .author__bio, 
-.sidebar .author__urls-wrapper,
-.sidebar .author__urls-wrapper li a {
-  font-family: "Roboto", sans-serif !important;
-  color: #1c1c1c !important; /* Dezelfde donkergrijze kleur als de hoofdtekst */
-  -webkit-font-smoothing: antialiased;
-}
-
-/* 2. Zorg dat de iconen in de sidebar niet de tekstkleur verstoren */
-.sidebar .author__urls-wrapper li i {
-  color: #052633 !important; /* Jouw blauwe kleur voor de iconen */
-}
-
-/* 3. Lijn de tekstgrootte rechtstreeks af */
-.sidebar .author__bio,
-.sidebar .author__urls-wrapper {
-  font-size: 0.95em !important; /* Iets kleiner voor de balans, maar in hetzelfde font */
+.homepage-layout .page__title {
+  margin-bottom: 1.2em !important; /* Ruimte tussen Welcome en de tekst */
 }
