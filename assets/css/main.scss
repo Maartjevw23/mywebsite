@@ -88,23 +88,28 @@ h1, h2, h3, h4, .page__title {
 }
 
 .sidebar .author__urls-wrapper li i {
-  color: #052633 !important; /* Iconen in blauw */
+  color: #052633 !important;
 }
 
-/* 5. LAYOUT & UITLIJNING (Desktop) */
+/* 5. LAYOUT & UITLIJNING (Fix voor Chrome & Edge uniformiteit) */
 @media (min-width: 64em) {
+  /* Fixeer de sidebar op een vaste breedte */
   .sidebar {
     width: 260px !important;
     position: absolute !important;
     z-index: 10;
   }
 
+  /* Dwing de tekstkolom tot een vaste afstand zodat deze nooit de sidebar overlapt */
   .archive, .page {
-    margin-left: 300px !important;
+    margin-left: 320px !important; /* Verhoogd voor een veilige buffer in alle browsers */
     display: block !important;
+    padding-top: 0 !important;
+    float: none !important;
+    clear: both !important;
   }
 
-  /* De standaard-titel begint bovenaan op Research/Teaching/CV */
+  /* Standaard startpunt titel voor Research/Teaching/CV */
   .page__title {
     margin-top: 0 !important;
     padding-top: 0 !important;
@@ -112,7 +117,7 @@ h1, h2, h3, h4, .page__title {
   }
 }
 
-/* Naam linksboven uitlijnen */
+/* Naam linksboven uitlijnen boven de foto */
 .masthead__inner {
   max-width: 1280px !important;
   margin-left: auto !important;
@@ -120,13 +125,12 @@ h1, h2, h3, h4, .page__title {
   padding-left: 1.5em !important; 
 }
 
-/* 6. SPECIFIEKE HOME-PAGINA FIX (De "Enters") */
-/* Dit werkt alleen als je 'classes: homepage-layout' in about.md hebt gezet */
+/* 6. SPECIFIEKE HOME-PAGINA FIX (De "Enters" voor Welcome) */
 .homepage-layout .page__content, 
 .homepage-layout .page__title {
-  margin-top: 4em !important; /* Dit creëert de witruimte boven Welcome */
+  margin-top: 4em !important; 
 }
 
 .homepage-layout .page__title {
-  margin-bottom: 1.2em !important; /* Ruimte tussen Welcome en de tekst */
+  margin-bottom: 1.2em !important; 
 }
