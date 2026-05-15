@@ -6,18 +6,17 @@ share: false
 ---
 
 <style>
-  /* Algemene instellingen */
+  /* 1. Algemene pagina instellingen */
   .page__inner-title { margin-bottom: 0.5em !important; }
   .page__content h2 { margin-top: 0.8em !important; color: #052633 !important; }
-  
-<style>
-  /* De "with..." regel: Forceer alles (tekst, em-tags én links) naar 0.85em */
+
+  /* 2. De "with..." regel: Alles uniform op 0.85em */
   .author-line, 
   .author-line em, 
   .author-line a, 
   .author-line span {
-    font-size: 0.85em !important; /* Gelijk aan jouw abstract-kopje */
-    font-weight: normal !important; /* Voorkomt dat de namen dikker ogen dan 'with' */
+    font-size: 0.85em !important; 
+    font-weight: normal !important; 
     color: #666 !important;
     line-height: 1.2 !important;
     font-style: italic !important;
@@ -26,13 +25,12 @@ share: false
 
   /* Subtiele styling voor de namen (links) */
   .author-line a {
-    border-bottom: 1px dotted #ccc !important; /* Maakt de namen herkenbaar als link zonder dat het druk oogt */
+    border-bottom: 1px dotted #ccc !important; 
   }
 
   .author-line a:hover {
     color: #052633 !important;
     border-bottom: 1px solid #052633 !important;
-    text-decoration: none !important;
   }
 
   .author-line {
@@ -41,9 +39,7 @@ share: false
     display: block;
   }
 
-</style>
-
-  /* Abstract-kopje en inhoud: Uniform op 0.85em */
+  /* 3. Abstract-kopje en inhoud: Uniform op 0.85em */
   details summary {
     font-weight: bold;
     cursor: pointer;
@@ -64,7 +60,7 @@ share: false
   /* Browser markers verbergen */
   details summary::-webkit-details-marker { display: none; }
 
-  /* Titels en lijnen */
+  /* 4. Titels en lijnen */
   .page__content h3 {
     margin-top: 0 !important;
     margin-bottom: 0.1em !important;
@@ -77,7 +73,6 @@ share: false
     margin: 1.5em 0 !important;
   }
 </style>
-
 
 <h2>Working papers</h2>
 
